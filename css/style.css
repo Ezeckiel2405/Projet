@@ -31,8 +31,8 @@
     display: flex;
     gap: 15px;
     position: absolute;
-    right: 40px; /* Aligné à droite par défaut */
-    top: 20px; 
+    justify-content: right; /* Aligné à droite par défaut */
+    
   }
   
   .social-icons a {
