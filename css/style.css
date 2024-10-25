@@ -1,5 +1,5 @@
 /*corps documment*/
- body {
+body {
     font-family: 'Montserrat', sans-serif;
     background-color: #0a141d;/*couleur ariière plan*/
     color: #ffffff;
@@ -92,14 +92,10 @@
     letter-spacing: 0.5px; /* Ajustement de l'espacement des lettres */
     padding: 5px 10px; /* Padding normal pour la version PC/tablette */
     border: 2px solid transparent;
-    transition: all 0.3s ease;
     white-space: nowrap; /* Empêche les filtres de se décomposer sur plusieurs lignes */
   }
   
-  .filter-bar a:hover {
-    color: #ffffff;
-    border-color: transparent;
-  }
+
   
   .filter-bar a:nth-child(2) {
     background-color: #1abc9c;
@@ -121,20 +117,15 @@
   }
   
   /* Mobile  */
-  @media (max-width: 600px) {
+  @media (width: 600px) {
     header {
         padding: 20px;
         flex-direction: column; /* Empile le logo et les icônes sociales verticalement */
         align-items: center; /* Centre tous les éléments du header */
     }
   
-    body {
-      margin: 0 5%; /* Ajoute des marges légères sur les côtés (5% de chaque côté) */
-   }
-  
-    .logo {
-        margin-bottom: 20px; /* Ajoute un espace sous le logo */
-    }
+
+   
   
     .social-icons {
         justify-content: center; /* Centre les icônes sociales uniquement sur mobile */
@@ -144,18 +135,11 @@
   
     .intro {
         padding: 30px 20px; /* Réduit le padding autour de l'introduction */
-        max-width: 100%; /* Prend toute la largeur disponible */
+        width: 100%; /* Prend toute la largeur disponible */
         text-align: left; /* Aligné à gauche */
     }
   
-    .intro h1 {
-        font-size: 30px; /* Réduit la taille du titre sur mobile */
-    }
-  
-    .intro p {
-        font-size: 16px; /* Réduction de la taille du texte sur mobile */
-        color: #5b6a71; /* Couleur modifiée */
-    }
+   
   
     .grid {
         grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour la galerie sur mobile */
@@ -179,7 +163,7 @@
   }
   
   /* Tablette */
-  @media (min-width: 601px) and (max-width: 1024px) {
+  @media (min-width: 601px) and (width: 1024px) {
     header {
         padding: 30px 40px; /* Moins de padding que sur la version PC */
         justify-content: space-between; /* Logo à gauche, icônes à droite */
@@ -192,7 +176,7 @@
   
     .intro {
         padding: 40px 50px; /* Moins de padding que sur la version PC */
-        max-width: 100%; /* Prend toute la largeur disponible avec les bordures */
+        width: 100%; /* Prend toute la largeur disponible avec les bordures */
     }
   
     .grid {
@@ -254,8 +238,4 @@
   /* Footer */
   footer {
     text-align: center;
-    margin-top: 40px;
-    font-size: 14px;
-    color: #666666;
   }
-  
