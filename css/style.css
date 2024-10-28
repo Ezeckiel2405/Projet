@@ -26,7 +26,7 @@ header {
 }
 
 /* Icônes  */
-.social-icons {
+.icons {
   display: flex;
   gap: 15px;
   position: absolute;
@@ -34,7 +34,7 @@ header {
   
 }
 
-.social-icons a {
+.icons a {
   color: #ffffff;
   font-size: 20px;
   text-decoration: none;
@@ -126,7 +126,7 @@ header {
 
  
 
-  .social-icons {
+  .icons {
       justify-content: center; /* Centre les icônes sociales uniquement sur mobile */
       position: static; /* Enlève le positionnement absolu */
       margin-top: 10px;
